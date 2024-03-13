@@ -1,0 +1,41 @@
+public interface javaaaa
+{ class Point {
+        private:
+        int x;
+        int y;
+        public:
+        Point(int x, int y) {
+            this->x = x;
+            this->y = y;
+        }
+
+        void setX(int x) {
+            this->x = x;
+        }
+
+        int getX() const {
+            return x;
+        }
+
+        void setY(int y) {
+            this->y = y;
+        }
+
+        int getY() const {
+            return y;
+        }
+    };
+
+    int main() {
+        // Tạo một đối tượng Point và in ra tọa độ ban đầu
+        Point p(3, 5);
+        std::cout << "Initial coordinates: (" << p.getX() << ", " << p.getY() << ")\n";
+        // Cập nhật tọa độ mới và in ra
+        p.setX(7);
+        p.setY(9);
+        std::cout << "Updated coordinates: (" << p.getX() << ", " << p.getY() << ")\n";
+
+        return 0;
+    }
+
+}
