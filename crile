@@ -1,0 +1,24 @@
+public class Circle {
+    // Private attributes
+    private double radius;
+    private String color;
+    private boolean filled;
+
+    // Constructors
+    public Circle() {
+        this.radius = 1.0; // Default radius
+        this.color = "red"; // Default color
+        this.filled = false; // Default filled status
+    }
+
+    public Circle(double radius) {
+        this.radius = radius;
+        this.color = "red"; // Default color
+        this.filled = false; // Default filled status
+    }
+
+    public Circle(double radius, String color, boolean filled) {
+        this.radius = radius;
+        this.color = color;
+        this.filled = filled;
+    
